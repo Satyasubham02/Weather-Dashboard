@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="weather-data" class="hidden">
+            <div class="current-weather">
+                <div class="details">
+                    <h2 id="city-name"></h2>
+                    <p id="date"></p>
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                </div>
+                <div class="weather-icon">
+                    <img id="weather-icon-img" src="" alt="Weather Icon">
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast-cards" class="forecast-cards">
+                    <!-- Forecast cards will be injected here by JS -->
+                </div>
+            </div>
+        </div>
+         <div id="loading" class="hidden">
+            <div class="spinner"></div>
+        </div>
+        <div id="error-message" class="hidden">
+            <p>City not found. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
