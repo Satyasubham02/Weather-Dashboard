@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- YOUR PERSONAL API KEY ---
     // This is your correctly implemented API key.
-    const API_KEY = '2f5645e873d70f89df2d724dc51c213b'; 
+    const API_KEY = 'API_KEY'; 
 
     // --- Event Listeners ---
     searchBtn.addEventListener('click', handleSearch);
@@ -117,4 +117,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load default city on page start
     getWeatherData('Bhubaneswar');
 });
+
 
